@@ -1,0 +1,106 @@
+<!-- DEVELOPER: David Arthasseril, IS 117 - 102, Spring 2024 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My First Bootstrap Page</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+          crossorigin="anonymous">
+    <link href="css/main.css" rel="stylesheet">
+
+</head>
+<body>
+<div class="container-fluid">
+    <div class="row">
+        <nav class="navbar navbar-expand-md
+                justify-content-between
+                bg-dark navbar-dark
+                col-12">
+
+            <!-- Left side (logo) -->
+            <a class="navbar-brand" href="index.html">
+                <img src="/images/logo.png" alt="A picture of the website logo." class="img-fluid"
+                     style="max-height: 50px;">
+            </a>
+            <!-- Collapsible button -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Collapsible content -->
+            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                <div class="d-flex justify-content-center">
+                    <!-- Navigation Links -->
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+                        <!-- Dropdown -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbardrop"
+                               data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Projects
+                            </a>
+                            <div class="dropdown-menu bg-dark">
+                                <a class="dropdown-item text-light" href="full-stack-website.html">Full-Stack
+                                    Website</a>
+                                <a class="dropdown-item text-light" href="sql-database.html">SQL Database</a>
+                                <a class="dropdown-item text-light" href="painting-app.html">Painting App</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html"><strong>Contact</strong></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="container">
+            <div class="row justify-content-center mt-5">
+                <div class="col-md-6">
+                    <h2 class="text-center mb-4">Want to know more? <strong>Contact me!</strong></h2>
+                    <form action="">
+                        <div class="mb-3">
+                            <label for="name" class="form-label"><strong>Your Name</strong></label>
+                            <input type="text" class="form-control" id="name" placeholder="Enter your name">
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label"><strong>Your Email</strong></label>
+                            <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label"><strong>Message</strong></label>
+                            <textarea class="form-control" id="message" rows="3" placeholder="Enter your message"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-lg btn-block mb-3">Submit</button>
+                        <div class="d-grid gap-2">
+                            <a href="mailto:dja35@njit.edu" class="btn btn-outline-secondary">Email: dja35@njit.edu</a>
+                            <a href="mailto:arthasserildavid@gmail.com" class="btn btn-outline-secondary">Email: arthasserildavid@gmail.com</a>
+                            <a href="https://www.linkedin.com/in/david-arthasseril/" class="btn btn-outline-secondary" target="_blank">LinkedIn</a>
+                            <a href="https://github.com/TermyYT" class="btn btn-outline-secondary" target="_blank">GitHub</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <footer class="footer page-footer font-small ">
+            <div class="container">
+                <div class="row">
+                    <span class="text-muted">&copy; David Arthasseril, 2024 |  Terms Of Use  |  Privacy Statement</span>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <!-- Javascript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous">
+    </script>
+</body>
+</html>

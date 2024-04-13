@@ -1,0 +1,157 @@
+<!-- DEVELOPER: David Arthasseril, IS 117 - 102, Spring 2024 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My First Bootstrap Page</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+          crossorigin="anonymous">
+    <link href="css/main.css" rel="stylesheet">
+
+</head>
+<body>
+<div class="container-fluid">
+    <div class="row">
+        <nav class="navbar navbar-expand-md
+                justify-content-between
+                bg-dark navbar-dark
+                col-12">
+
+            <!-- Left side (logo) -->
+            <a class="navbar-brand" href="index.html">
+                <img src="/images/logo.png" alt="A picture of the website logo." class="img-fluid"
+                     style="max-height: 50px;">
+            </a>
+            <!-- Collapsible button -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Collapsible content -->
+            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                <div class="d-flex justify-content-center">
+                    <!-- Navigation Links -->
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+                        <!-- Dropdown -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbardrop"
+                               data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <strong>Projects</strong>
+                            </a>
+                            <div class="dropdown-menu bg-dark">
+                                <a class="dropdown-item text-light" href="full-stack-website.html">Full-Stack
+                                    Website</a>
+                                <a class="dropdown-item text-light" href="sql-database.html">SQL Database</a>
+                                <a class="dropdown-item text-light" href="painting-app.html">Painting App</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="container justify-content-center mt-3">
+            <!-- Epic Favoriter Demo video.  -->
+            <div class="row" id="website-demo">
+                <iframe width="1152" height="675" src="https://www.youtube.com/embed/l69fQmDfwmU?si=xChLMZGaWEOqdCiU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 offset-md-2 mb-4">
+                        <h2 class="text-center mt-3">Features</h2>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">See full titles, descriptions, release dates, original prices, discount prices, and current codes for many game titles from the Epic Store.</li>
+                            <li class="list-group-item">Interact with a user-friendly interface to ensure easy site navigation for all users.</li>
+                            <li class="list-group-item">Browse a user-friendly version of the website's database filled with mapped API data.</li>
+                            <li class="list-group-item">Favorite games of your liking and tie them to your account. If you don't want to track them anymore, unfavorite them.</li>
+                            <li class="list-group-item">Admins can create, list, and assign roles and manage API data. They can also add, update, or remove database entries.</li>
+                            <li class="list-group-item">Users can see single item views for individual titles, browse the entire database, and make new entries in the database..</li>
+                            <li class="list-group-item">Large lists are sorted into dynamic pages.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <img src="/images/game_list.PNG" alt="A picture of the website's game list." class="img-fluid img-outline mb-2"
+                 style="max-height: 250px;">
+            <h2>Objective</h2>
+            <p>
+                The goal of this project was to create an easy-to-use website where users could keep track of various game titles from the Epic Games store. The user is able to create an account on the site, head to the game list page, view singular pages for each game, favorite any they like, and refer to their favorites list if they want to keep track of said games. Additionally, long lists are sorted into pages to avoid creating an overwhelming experience for the viewer and there are filters that the user can take advantage of to sort through entries more easily. The website uses Bootstrap for its frontend interface and also takes advantage of front-and-backend validation checks to ensure that proper security measures are present for account safety and to ensure that any form data is submitted correctly.
+                <br><br>
+                Phasellus vestibulum lorem sed risus. Fusce id velit ut tortor pretium. Enim ut tellus elementum
+                sagittis vitae. Vel orci porta non pulvinar neque laoreet suspendisse. Pellentesque elit eget gravida
+                cum sociis natoque. Diam donec adipiscing tristique risus nec feugiat. At risus viverra adipiscing at in
+                tellus integer feugiat. Et tortor at risus viverra adipiscing at in tellus integer. Purus non enim
+                praesent elementum facilisis leo. At elementum eu facilisis sed odio morbi. Rutrum quisque non tellus
+                orci ac. Vulputate odio ut enim blandit volutpat maecenas volutpat. Aliquet enim tortor at auctor urna
+                nunc id cursus metus. Lacinia at quis risus sed vulputate odio.
+            </p><br>
+            <img src="/images/single_view.PNG" alt="A picture of the website's page for a single game title." class="img-fluid img-outline mb-2"
+                 style="max-height: 250px;">
+            <h2>Process</h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Sed velit dignissim sodales ut. Egestas fringilla phasellus faucibus scelerisque
+                eleifend donec pretium vulputate. Tortor aliquam nulla facilisi cras fermentum odio eu feugiat pretium.
+                Purus semper eget duis at tellus at. Dolor sit amet consectetur adipiscing elit pellentesque habitant
+                morbi. Nunc id cursus metus aliquam eleifend mi in. Vel facilisis volutpat est velit egestas dui id
+                ornare. Pulvinar proin gravida hendrerit lectus. In arcu cursus euismod quis. Urna id volutpat lacus
+                laoreet non. Suscipit adipiscing bibendum est ultricies integer quis auctor elit. Egestas sed tempus
+                urna et. Arcu non sodales neque sodales. Integer quis auctor elit sed vulputate mi sit. Sagittis aliquam
+                malesuada bibendum arcu vitae elementum.
+                <br><br>
+                Over the years of playing games, I had also picked up on various nuances of the Windows operating
+                system, how software works, how to write better, etc. As time went on and I became more well-versed in
+                computers, my interest and fascination in them grew. Now, I can't imagine living life without computers.
+                Overall, discovering the depth of computers was one of the most important journeys of my life. I knew
+                from a young age that I wanted to work with computers.
+            </p><br>
+            <img src="/images/github_202.PNG" alt="A picture of the website's GitHub page." class="img-fluid img-outline mb-2"
+                 style="max-height: 250px;">
+            <h2>Results</h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Sed velit dignissim sodales ut. Egestas fringilla phasellus faucibus scelerisque
+                eleifend donec pretium vulputate. Tortor aliquam nulla facilisi cras fermentum odio eu feugiat pretium.
+                Purus semper eget duis at tellus at. Dolor sit amet consectetur adipiscing elit pellentesque habitant
+                morbi. Nunc id cursus metus aliquam eleifend mi in. Vel facilisis volutpat est velit egestas dui id
+                ornare. Pulvinar proin gravida hendrerit lectus. In arcu cursus euismod quis. Urna id volutpat lacus
+                laoreet non. Suscipit adipiscing bibendum est ultricies integer quis auctor elit. Egestas sed tempus
+                urna et. Arcu non sodales neque sodales. Integer quis auctor elit sed vulputate mi sit. Sagittis aliquam
+                malesuada bibendum arcu vitae elementum.
+                <br><br>
+                Phasellus vestibulum lorem sed risus. Fusce id velit ut tortor pretium. Enim ut tellus elementum
+                sagittis vitae. Vel orci porta non pulvinar neque laoreet suspendisse. Pellentesque elit eget gravida
+                cum sociis natoque. Diam donec adipiscing tristique risus nec feugiat. At risus viverra adipiscing at in
+                tellus integer feugiat. Et tortor at risus viverra adipiscing at in tellus integer. Purus non enim
+                praesent elementum facilisis leo. At elementum eu facilisis sed odio morbi. Rutrum quisque non tellus
+                orci ac. Vulputate odio ut enim blandit volutpat maecenas volutpat. Aliquet enim tortor at auctor urna
+                nunc id cursus metus. Lacinia at quis risus sed vulputate odio.
+            </p>
+        </div>
+    </div>
+    <footer class="footer page-footer font-small ">
+        <div class="container">
+            <div class="row">
+                <span class="text-muted">&copy; David Arthasseril, 2024 |  Terms Of Use  |  Privacy Statement</span>
+            </div>
+        </div>
+    </footer>
+</div>
+<!-- Javascript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous">
+</script>
+</body>
+</html>

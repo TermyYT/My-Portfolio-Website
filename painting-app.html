@@ -1,0 +1,178 @@
+<!-- DEVELOPER: David Arthasseril, IS 117 - 102, Spring 2024 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My First Bootstrap Page</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+          crossorigin="anonymous">
+    <link href="css/main.css" rel="stylesheet">
+
+</head>
+<body>
+<div class="container-fluid">
+    <div class="row">
+        <nav class="navbar navbar-expand-md
+                justify-content-between
+                bg-dark navbar-dark
+                col-12">
+
+            <!-- Left side (logo) -->
+            <a class="navbar-brand" href="index.html">
+                <img src="/images/logo.png" alt="A picture of the website logo." class="img-fluid"
+                     style="max-height: 50px;">
+            </a>
+            <!-- Collapsible button -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Collapsible content -->
+            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                <div class="d-flex justify-content-center">
+                    <!-- Navigation Links -->
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+                        <!-- Dropdown -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbardrop"
+                               data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <strong>Projects</strong>
+                            </a>
+                            <div class="dropdown-menu bg-dark">
+                                <a class="dropdown-item text-light" href="full-stack-website.html">Full-Stack
+                                    Website</a>
+                                <a class="dropdown-item text-light" href="sql-database.html">SQL Database</a>
+                                <a class="dropdown-item text-light" href="painting-app.html">Painting App</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="container justify-content-center mt-3">
+            <!-- Embedded Game -->
+            <div class="row" id="game-embed">
+                <iframe frameborder="0" src="https://itch.io/embed-upload/7792725?color=333333" allowfullscreen=""
+                        width="960" height="720"><a href="https://termyyt.itch.io/p-for-painting">Play P for Painting on
+                    itch.io</a></iframe>
+            </div>
+            <!-- Itch.io Widget -->
+            <div class="row d-none" id="game-widget">
+                <iframe frameborder="0" src="https://itch.io/embed/2039477?border_width=5&amp;dark=true" width="216"
+                        height="175"><a href="https://termyyt.itch.io/p-for-painting">P for Painting by TermyYT</a>
+                </iframe>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 offset-md-2 mb-4">
+                        <h2 class="text-center mt-3">Features</h2>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Shape of objects, texture of board, and background image can all be changed.</li>
+                            <li class="list-group-item">Dark mode toggle and lighting slider support.</li>
+                            <li class="list-group-item">Toggle for timed destruction of paint objects.</li>
+                            <li class="list-group-item">Button for erasing all drawn contents at once.</li>
+                            <li class="list-group-item">Toggle for randomized paint object sizes.</li>
+                            <li class="list-group-item">Toggle for randomized paint object colors.</li>
+                            <li class="list-group-item">User can choose what color object they want if randomized colors is disabled.</li>
+                            <li class="list-group-item">Motivational (and sometimes funny) quotes are chosen from a list and displayed at the top of the game window.</li>
+                            <li class="list-group-item">The board can be rotated to be in portrait or landscape.</li>
+                            <li class="list-group-item">Main Menu button in bottom left.</li>
+                            <li class="list-group-item">Working tooltips when hovering over certain UI elements.</li>
+                            <li class="list-group-item">Drawing instructions below the canvas.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <img src="/images/smiley_face.PNG" alt="A picture of a smiley face drawn on the canvas in the game." class="img-fluid img-outline mb-2"
+                 style="max-height: 250px;">
+            <h2>Objective</h2>
+            <p>
+                The goal of this project was to create an interactive, user-friendly painting app using the Unity game
+                engine. I wanted to make it as simple as possible while still delivering a fun product to the players.
+                What started as a very simple project, however, grew to have many wonderful features suggested by
+                friends and family. This was a particularly exciting project because I requested and received feedback
+                on what I should add, what should be fixed, and what needs to be removed. I also got a chance to work
+                with many clever minds over in the Unity Discord server, and it was a humbling experience seeing so many
+                knowledgeable and accomplished developers help each other in creating their games and applications. I
+                borrowed ideas from other developers and implemented them in my own game with unique twists.
+                Additionally, I took to YouTube to find tutorials on how to implement a variety of features.
+                <br><br>
+                Phasellus vestibulum lorem sed risus. Fusce id velit ut tortor pretium. Enim ut tellus elementum
+                sagittis vitae. Vel orci porta non pulvinar neque laoreet suspendisse. Pellentesque elit eget gravida
+                cum sociis natoque. Diam donec adipiscing tristique risus nec feugiat. At risus viverra adipiscing at in
+                tellus integer feugiat. Et tortor at risus viverra adipiscing at in tellus integer. Purus non enim
+                praesent elementum facilisis leo. At elementum eu facilisis sed odio morbi. Rutrum quisque non tellus
+                orci ac. Vulputate odio ut enim blandit volutpat maecenas volutpat. Aliquet enim tortor at auctor urna
+                nunc id cursus metus. Lacinia at quis risus sed vulputate odio.
+            </p><br>
+            <img src="/images/quote.PNG" alt="A picture of the game featuring dark lighting, a quote, and a rotated canvas." class="img-fluid img-outline mb-2"
+                 style="max-height: 250px;">
+            <h2>Process</h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Sed velit dignissim sodales ut. Egestas fringilla phasellus faucibus scelerisque
+                eleifend donec pretium vulputate. Tortor aliquam nulla facilisi cras fermentum odio eu feugiat pretium.
+                Purus semper eget duis at tellus at. Dolor sit amet consectetur adipiscing elit pellentesque habitant
+                morbi. Nunc id cursus metus aliquam eleifend mi in. Vel facilisis volutpat est velit egestas dui id
+                ornare. Pulvinar proin gravida hendrerit lectus. In arcu cursus euismod quis. Urna id volutpat lacus
+                laoreet non. Suscipit adipiscing bibendum est ultricies integer quis auctor elit. Egestas sed tempus
+                urna et. Arcu non sodales neque sodales. Integer quis auctor elit sed vulputate mi sit. Sagittis aliquam
+                malesuada bibendum arcu vitae elementum.
+                <br><br>
+                Over the years of playing games, I had also picked up on various nuances of the Windows operating
+                system, how software works, how to write better, etc. As time went on and I became more well-versed in
+                computers, my interest and fascination in them grew. Now, I can't imagine living life without computers.
+                Overall, discovering the depth of computers was one of the most important journeys of my life. I knew
+                from a young age that I wanted to work with computers.
+            </p><br>
+            <img src="/images/spotlight_on.PNG" alt="A picture of the game's canvas with the spotlight shining on it." class="img-fluid img-outline mb-2"
+                 style="max-height: 250px;">
+            <h2>Results</h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Sed velit dignissim sodales ut. Egestas fringilla phasellus faucibus scelerisque
+                eleifend donec pretium vulputate. Tortor aliquam nulla facilisi cras fermentum odio eu feugiat pretium.
+                Purus semper eget duis at tellus at. Dolor sit amet consectetur adipiscing elit pellentesque habitant
+                morbi. Nunc id cursus metus aliquam eleifend mi in. Vel facilisis volutpat est velit egestas dui id
+                ornare. Pulvinar proin gravida hendrerit lectus. In arcu cursus euismod quis. Urna id volutpat lacus
+                laoreet non. Suscipit adipiscing bibendum est ultricies integer quis auctor elit. Egestas sed tempus
+                urna et. Arcu non sodales neque sodales. Integer quis auctor elit sed vulputate mi sit. Sagittis aliquam
+                malesuada bibendum arcu vitae elementum.
+                <br><br>
+                Phasellus vestibulum lorem sed risus. Fusce id velit ut tortor pretium. Enim ut tellus elementum
+                sagittis vitae. Vel orci porta non pulvinar neque laoreet suspendisse. Pellentesque elit eget gravida
+                cum sociis natoque. Diam donec adipiscing tristique risus nec feugiat. At risus viverra adipiscing at in
+                tellus integer feugiat. Et tortor at risus viverra adipiscing at in tellus integer. Purus non enim
+                praesent elementum facilisis leo. At elementum eu facilisis sed odio morbi. Rutrum quisque non tellus
+                orci ac. Vulputate odio ut enim blandit volutpat maecenas volutpat. Aliquet enim tortor at auctor urna
+                nunc id cursus metus. Lacinia at quis risus sed vulputate odio.
+            </p>
+        </div>
+    </div>
+    <footer class="footer page-footer font-small ">
+        <div class="container">
+            <div class="row">
+                <span class="text-muted">&copy; David Arthasseril, 2024 |  Terms Of Use  |  Privacy Statement</span>
+            </div>
+        </div>
+    </footer>
+</div>
+<!-- Javascript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous">
+</script>
+</body>
+</html>

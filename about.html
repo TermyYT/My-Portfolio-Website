@@ -1,0 +1,138 @@
+<!-- DEVELOPER: David Arthasseril, IS 117 - 102, Spring 2024 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My First Bootstrap Page</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+          crossorigin="anonymous">
+    <link href="css/main.css" rel="stylesheet">
+
+</head>
+<body>
+<div class="container-fluid">
+    <div class="row">
+        <nav class="navbar navbar-expand-md
+                justify-content-between
+                bg-dark navbar-dark
+                col-12">
+
+            <!-- Left side (logo) -->
+            <a class="navbar-brand" href="index.html">
+                <img src="/images/logo.png" alt="A picture of the website logo." class="img-fluid"
+                     style="max-height: 50px;">
+            </a>
+            <!-- Collapsible button -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Collapsible content -->
+            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                <div class="d-flex justify-content-center">
+                    <!-- Navigation Links -->
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html"><strong>About</strong></a>
+                        </li>
+                        <!-- Dropdown -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbardrop"
+                               data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Projects
+                            </a>
+                            <div class="dropdown-menu bg-dark">
+                                <a class="dropdown-item text-light" href="full-stack-website.html">Full-Stack
+                                    Website</a>
+                                <a class="dropdown-item text-light" href="sql-database.html">SQL Database</a>
+                                <a class="dropdown-item text-light" href="painting-app.html">Painting App</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="container-fluid">
+            <div class="row">
+                <!-- Profile Photo (Fixed) -->
+                <div class="col-md-3">
+                    <h1 class="text-center"><strong>David Arthasseril</strong></h1>
+                    <img src="/images/suit_selfie.jpg" class="profile-photo" alt="A selfie of David Arthasseril in a suit.">
+                </div>
+                <!-- Content -->
+                <div class="col-md-9 content">
+                    <!-- Embedded Resume -->
+                    <h1 class="text-center"><strong>My Resume</strong></h1>
+                    <iframe src="resume.pdf" width="100%" height="500px"></iframe>
+                    <!-- Introduction -->
+                    <h1 class="text-center"><strong>About Me</strong></h1>
+                    <p><strong>Good day to you, ladies and gentlemen!</strong> My name is David, I'm 23, an IT major, and I graduated from NJIT in 2024!</p>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-8 offset-md-2 mb-4">
+                                <h2 class="text-center mt-3">Quick Facts</h2>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">My interests include: gaming, technology, coding, philosophy, the arts, and music.</li>
+                                    <li class="list-group-item">I describe myself as a naturally caring and compassionate person.</li>
+                                    <li class="list-group-item">I'm a very optimistic, but also realistic, and typically happy person. I like to look on the bright side and I have hope for the future.</li>
+                                    <li class="list-group-item">I talk a lot, so if you catch my interest with something, prepare for walls of text due to my overflowing enthusiasm.</li>
+                                    <li class="list-group-item">I'm an INFJ if you want to get a general feel of my personality, although Myers-Briggs type isn't important to me.</li>
+                                    <li class="list-group-item">My dream is simply to help others and make people feel happy and good about themselves. I consider a day a success if I'm able to do this for even one person. It brings me a sense of purpose and fulfillment.</li>
+                                    <li class="list-group-item">I'm willing to talk about most things!</li>
+                                    <li class="list-group-item">I am an excellent active listener and enjoy speaking with compassion in mind.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <h2>Education</h2>
+                    <p>
+                        I have a Bachelor's degree in Information Technology from the New Jersey Institute of Technology (NJIT) which I acquired in 2024. It was one of my proudest moments in my academic career, and while it took many years to get, it was well worth it in the end. During my time at NJIT, I took a large variety of classes which allowed me to become well-versed in all things technology-related. I learned many valuable skills which would later become highly relevant and applicable in my career as a software developer, and I'm grateful for the opportunities I was given by my professors.
+                    <br><br>
+                        Phasellus vestibulum lorem sed risus. Fusce id velit ut tortor pretium. Enim ut tellus elementum sagittis vitae. Vel orci porta non pulvinar neque laoreet suspendisse. Pellentesque elit eget gravida cum sociis natoque. Diam donec adipiscing tristique risus nec feugiat. At risus viverra adipiscing at in tellus integer feugiat. Et tortor at risus viverra adipiscing at in tellus integer. Purus non enim praesent elementum facilisis leo. At elementum eu facilisis sed odio morbi. Rutrum quisque non tellus orci ac. Vulputate odio ut enim blandit volutpat maecenas volutpat. Aliquet enim tortor at auctor urna nunc id cursus metus. Lacinia at quis risus sed vulputate odio.
+                    <br><br>
+                        Libero enim sed faucibus turpis. Ut sem viverra aliquet eget sit amet tellus cras. Malesuada fames ac turpis egestas integer eget aliquet nibh praesent. Iaculis eu non diam phasellus vestibulum. Curabitur vitae nunc sed velit dignissim sodales. A erat nam at lectus urna duis convallis. Massa tincidunt dui ut ornare lectus sit amet est. Mattis enim ut tellus elementum sagittis. Arcu dui vivamus arcu felis bibendum ut. Elit duis tristique sollicitudin nibh. Sed ullamcorper morbi tincidunt ornare. Proin sed libero enim sed faucibus turpis in eu. Vitae aliquet nec ullamcorper sit. Pulvinar neque laoreet suspendisse interdum consectetur libero id. Mi ipsum faucibus vitae aliquet. Et leo duis ut diam quam nulla. Posuere sollicitudin aliquam ultrices sagittis orci a scelerisque purus. Viverra adipiscing at in tellus integer feugiat scelerisque varius. Porttitor rhoncus dolor purus non enim praesent elementum facilisis leo. Id venenatis a condimentum vitae sapien pellentesque.
+                    </p>
+                    <h2>Interests</h2>
+                    <p>
+                         For as long as I could remember, I had been playing video games. The earliest I remember playing a video game was at the age of 5. Since then, my experience with games has only grown. The games I played as a small child still hold a special place in my heart nearly 2 decades later. Now, due to my upbringing, gaming has become one of my favorite hobbies. These days, I prefer indie titles because I believe that's where the passion in gaming truly lies. In my humble opinion, AAA titles no longer hold the magic they once did.
+                        <br><br>
+                        Over the years of playing games, I had also picked up on various nuances of the Windows operating system, how software works, how to write better, etc. As time went on and I became more well-versed in computers, my interest and fascination in them grew. Now, I can't imagine living life without computers. Overall, discovering the depth of computers was one of the most important journeys of my life. I knew from a young age that I wanted to work with computers.
+                        <br><br>
+                        Libero enim sed faucibus turpis. Ut sem viverra aliquet eget sit amet tellus cras. Malesuada fames ac turpis egestas integer eget aliquet nibh praesent. Iaculis eu non diam phasellus vestibulum. Curabitur vitae nunc sed velit dignissim sodales. A erat nam at lectus urna duis convallis. Massa tincidunt dui ut ornare lectus sit amet est. Mattis enim ut tellus elementum sagittis. Arcu dui vivamus arcu felis bibendum ut. Elit duis tristique sollicitudin nibh. Sed ullamcorper morbi tincidunt ornare. Proin sed libero enim sed faucibus turpis in eu. Vitae aliquet nec ullamcorper sit. Pulvinar neque laoreet suspendisse interdum consectetur libero id. Mi ipsum faucibus vitae aliquet. Et leo duis ut diam quam nulla. Posuere sollicitudin aliquam ultrices sagittis orci a scelerisque purus. Viverra adipiscing at in tellus integer feugiat scelerisque varius. Porttitor rhoncus dolor purus non enim praesent elementum facilisis leo. Id venenatis a condimentum vitae sapien pellentesque.
+                    </p>
+                    <h2>Discord Server</h2>
+                    <p>
+                        My primary passion project is the Discord server I have been continuously developing with close friends since 2019 called "Paradigm Shifters". It's a public community server with a strong focus on love, compassion, appreciation, and positivity. Through it, I have met and grown close with many individuals from across the globe and have learned a lot about the value of friendship. Now, it's where I can be found most of the time, enjoying others' company, fostering a positive and loving environment, playing games, hanging out, and making new connections. I could not be more grateful for this online community and the many friendships I made through it.
+                        <br><br>
+                        Phasellus vestibulum lorem sed risus. Fusce id velit ut tortor pretium. Enim ut tellus elementum sagittis vitae. Vel orci porta non pulvinar neque laoreet suspendisse. Pellentesque elit eget gravida cum sociis natoque. Diam donec adipiscing tristique risus nec feugiat. At risus viverra adipiscing at in tellus integer feugiat. Et tortor at risus viverra adipiscing at in tellus integer. Purus non enim praesent elementum facilisis leo. At elementum eu facilisis sed odio morbi. Rutrum quisque non tellus orci ac. Vulputate odio ut enim blandit volutpat maecenas volutpat. Aliquet enim tortor at auctor urna nunc id cursus metus. Lacinia at quis risus sed vulputate odio.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <footer class="footer page-footer font-small ">
+            <div class="container">
+                <div class="row">
+                    <span class="text-muted">&copy; David Arthasseril, 2024 |  Terms Of Use  |  Privacy Statement</span>
+                </div>
+            </div>
+        </footer>
+    </div>
+</div>
+
+    <!-- Javascript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous">
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,180 @@
+<!-- DEVELOPER: David Arthasseril, IS 117 - 102, Spring 2024 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My First Bootstrap Page</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+          crossorigin="anonymous">
+    <link href="css/main.css" rel="stylesheet">
+
+</head>
+<body>
+<div class="container-fluid">
+    <div class="row">
+        <nav class="navbar navbar-expand-md
+                justify-content-between
+                bg-dark navbar-dark
+                col-12">
+
+            <!-- Left side (logo) -->
+            <a class="navbar-brand" href="index.html">
+                <img src="/images/logo.png" alt="A picture of the website logo." class="img-fluid"
+                     style="max-height: 50px;">
+            </a>
+            <!-- Collapsible button -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Collapsible content -->
+            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                <div class="d-flex justify-content-center">
+                    <!-- Navigation Links -->
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html"><strong>Home</strong></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+                        <!-- Dropdown -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbardrop"
+                               data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Projects
+                            </a>
+                            <div class="dropdown-menu bg-dark">
+                                <a class="dropdown-item text-light" href="full-stack-website.html">Full-Stack
+                                    Website</a>
+                                <a class="dropdown-item text-light" href="sql-database.html">SQL Database</a>
+                                <a class="dropdown-item text-light" href="painting-app.html">Painting App</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Carousel -->
+        <div class="col-lg-9 col-md-10 col-sm-11 mx-auto carousel-container">
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                            aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+                            aria-label="Slide 4"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <a href="about.html"><img src="/images/selfie.jpg" class="d-block w-100"
+                             alt="A photo of David Arthasseril."></a>
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5><strong>Welcome!</strong></h5>
+                            <p>My name is David Arthasseril. This page is made to showcase my projects!</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <a href="full-stack-website.html"><img src="/images/game_list.png" class="d-block w-100"
+                             alt="A screenshot of Epic Favoriter's game database."></a>
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5><strong>Full-Stack Website</strong></h5>
+                            <p>A website where users can keep track of their favorite Epic Store games!</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <a href="sql-database.html"><img src="/images/er_diagram.PNG" class="d-block w-100"
+                             alt="A screenshot of my SQL database's ER diagram."></a>
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5><strong>SQL Database</strong></h5>
+                            <p>A complete and normalized SQL database made entirely from scratch!</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <a href="painting-app.html"><img src="/images/painting_app.PNG" class="d-block w-100"
+                             alt="A screenshot of my painting app, P for Painting."></a>
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5><strong>Painting App</strong></h5>
+                            <p>A Unity-based painting app that uses 3D objects!</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                        data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                        data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+            <!-- Spacer -->
+            <div class="col-lg-9 col-md-10 col-sm-11 mx-auto" style="height: 20px;"></div>
+            <!-- About Card -->
+            <div class="row card-container">
+                <div class="col-lg-6 col-md-6 col-sm-6">
+                    <div class="card mb-3">
+                        <a href="about.html"><img src="/images/about_me.jpg" class="card-img-top"
+                             alt="Clip art of a question mark floating above a suit."></a>
+                        <div class="card-body text-center">
+                            <h5 class="card-title"><strong>About Me</strong></h5>
+                            <p class="card-text">
+                            <ul>
+                                <li>I received my Bachelor's in Information Technology at NJIT in 2024.</li>
+                                <li>I love technology, gaming, and helping others.</li>
+                                <li>Want to learn more about me? Go to my About page!</li>
+                            </ul>
+                            </p>
+                            <a href="about.html" class="btn btn-primary">About Page</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Contact Card -->
+                <div class="col-lg-6 col-md-6 col-sm-6">
+                    <div class="card mb-3">
+                        <a href="contact.html"><img src="/images/form.jpg" class="card-img-top"
+                             alt="Clip art of a pair of hands holding a pen over a form document."></a>
+                        <div class="card-body text-center">
+                            <h5 class="card-title"><strong>Contact</strong></h5>
+                            <p class="card-text">
+                            <ul>
+                                <li>Like what you see? Tell me about it!</li>
+                                <li>My school email is <a href="mailto:dja35@njit.edu"><strong>dja35@njit.edu</strong></a>.</li>
+                                <li>My work email is <a href="mailto:arthasserildavid@gmail.com"><strong>arthasserildavid@gmail.com</strong></a>.</li>
+                            </ul>
+                            </p>
+                            <a href="contact.html" class="btn btn-primary">Contact Page</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Footer -->
+            <footer class="footer page-footer font-small">
+                <div class="container">
+                    <div class="row">
+                        <span class="text-muted">&copy; David Arthasseril, 2024 |  Terms Of Use  |  Privacy Statement</span>
+                    </div>
+                </div>
+            </footer>
+        </div>
+
+        <!-- Javascript Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+                crossorigin="anonymous">
+        </script>
+    </div>
+</div>
+</body>
+</html>
